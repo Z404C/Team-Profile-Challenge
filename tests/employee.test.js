@@ -1,4 +1,4 @@
-const employee = require('./employee.js')
+const employee = require('./employee')
 
 //'it' might need to be changed to "should return a card with members info."
 describe("Employee", () => {
