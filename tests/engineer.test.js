@@ -1,4 +1,4 @@
-const engineer = require('./engineer')
+const Engineer = require('./engineer')
 
 describe("Engineer", () =>{
     const testEngineer = {
@@ -9,11 +9,12 @@ describe("Engineer", () =>{
     }
     describe("making constructor tests", ()=> {
         it("should construct a new instance of the engineer class", ()=>{
-            const engineer = new engineer(testEngineer);
-            expect(engineer).toBeInstanceOf(engineer);
+            const engineer = new Engineer(testEngineer);
+            expect(engineer).toBeInstanceOf(Engineer);
         });
 
         it("should construct a new instance of an engineer class with name, id, email, and github profile", ()=>{
+            const engineer = new Engineer(testEngineer);
             expect(engineer).toEqual({
                 name: "ron", 
                 id: 2, 
@@ -26,27 +27,27 @@ describe("Engineer", () =>{
 
     describe("method testing", ()=>{
         it("should return id when the getId method is called", ()=>{
-            const engineer = new engineer(testEngineer);
+            const engineer = new Engineer(testEngineer);
             expect(engineer.getId()).toEqual(2)
         });
 
         it("should return name when the getName method is called", ()=>{
-            const engineer = new engineer(testEngineer);
-            expect(getName()).toEqual("ron")
+            const engineer = new Engineer(testEngineer);
+            expect(engineer.getName()).toEqual("ron")
         });
 
         it("should return email when getEmail method is called", ()=>{
-            const engineer = new engineer(testEngineer);
+            const engineer = new Engineer(testEngineer);
             expect(engineer.getEmail()).toEqual("ron@email.com")
         });
 
         it("should return github profile URL when the getGithub method is called", ()=>{
-            const engineer = new engineer(testEnginner);
+            const engineer = new Engineer(testEnginner);
             expect(engineer.getGithub()).toEqual("www.github.com/ron")
         });
 
         it("should return engineer role when the getRole method is called", ()=>{
-            const engineer = new engineer(testEngineer);
+            const engineer = new Engineer(testEngineer);
             expect(engineer.getRole()).toEqual("Engineer");
         });
     })
