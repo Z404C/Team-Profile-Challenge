@@ -42,7 +42,7 @@ describe("Engineer", () =>{
         });
 
         it("should return github profile URL when the getGithub method is called", ()=>{
-            const engineer = new Engineer(testEnginner);
+            const engineer = new Engineer(testEngineer);
             expect(engineer.getGithub()).toEqual("www.github.com/ron")
         });
 

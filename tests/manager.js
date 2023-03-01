@@ -17,4 +17,4 @@ class Manager extends Employee{
         return this.role;
     }
 }
-module.exports=Manager;
+module.exports= Manager;
